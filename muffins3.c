@@ -7,8 +7,8 @@
 //program will ask the user for how many of each type of muffins they wish to buy
 //then it will calculate the total price
 //this will apply taxes @ 13% if user purchases fewer than 6 muffins
-//A user can optionally add chocolate chips @ 0.10 per muffin, sprinkles@0.15 muffin
-//icing@0.25 per muffin
+//A user can optionally add chocolate chips 5.00, 4.00 muffin
+//icing 6.00 per muffin
 #define BASICPRICE 1.00
 #define PREMIUMPRICE 2.00
 
@@ -18,8 +18,8 @@ int readPremium(void);
 char readIcing(void);
 char readSprinkles(void);
 char readChocolate(void);
-
-double totalPrice(int numBasic, int numPremium);
+double calculateAddins(char icing, char sprinkles, char chocolate);
+double totalPrice(int numBasic, int numPremium, double addinExtras);
 void outputResult(int numBasic, int numPremium, double total);
 
 int main(void)
