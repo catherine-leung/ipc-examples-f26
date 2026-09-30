@@ -1,0 +1,18 @@
+# Comment Codes
+
+On a quiz paper, you may find a circle with a letter.  That letter is a comment code.  Look up the code below for the quiz to see detailed feedback
+
+* A - type error - the type is just float /double 
+* B - Undefined value used for initialization 
+* C - %f, %lf, %d etc. are format codes and only ever go inside the format string of a `printf()` or `scanf()`
+* D - variable names cannot have spaces in them.
+* E - this block is outside of main().  Code must be inside a function.  In this case as there is only one function, the code must be inside of main()
+* F - printf() produces output.. put this thing onto the screen.  It does not read in information. 
+* G - To read data into a variable you need to use scanf()
+* H - calculations does not calculate the price of pizza correctly
+* I - use of undeclared/undefined variables
+* J - if you want to use constants its good.. but the constants need to be defined with the const keyword to keep them from changing during run of function `const double base = 8.00;` for example instead of `double base - 8.00` or you can use macros `#define BASE 8.00` which is how C has traditionally declared constants.  All constants should be declared outside of the main function.  Global constants good!  (**Global variables very very very extremely extremely BAD**)
+* K - if you are using a variable for one thing.. you can't use it for something else later while the data is still needed/valid.
+* L - wrong data type
+* M - mismatched format code and data type
+* N - 
