@@ -11,8 +11,14 @@ On a quiz paper, you may find a circle with a letter.  That letter is a comment 
 * G - To read data into a variable you need to use scanf()
 * H - calculations does not calculate the price of pizza correctly
 * I - use of undeclared/undefined variables
-* J - if you want to use constants its good.. but the constants need to be defined with the const keyword to keep them from changing during run of function `const double base = 8.00;` for example instead of `double base - 8.00` or you can use macros `#define BASE 8.00` which is how C has traditionally declared constants.  All constants should be declared outside of the main function.  Global constants good!  (**Global variables very very very extremely extremely BAD**)
+* J - if you want to use constants its good.. but the constants need to be defined with the const keyword to keep them from changing during run of function `const double base = 8.00;` for example instead of `double base - 8.00` or you can use macros `#define BASE 8.00` which is how C has traditionally declared constants.  All constants should be declared outside of the main function.  Global constants good!  (**Global variables however are very very very extremely extremely BAD**)
 * K - if you are using a variable for one thing.. you can't use it for something else later while the data is still needed/valid.
 * L - wrong data type
 * M - mismatched format code and data type
-* N - 
+* N - scanf() not correctly used.  `scanf("formatstring", &var)` where formatstring should describe the shape of the input.. %lf, %d, etc. etc.
+* O - not really an error in syntactic or logical sense, but this is not good practice.  Earlier these names were constants but here you are using them to store results.  Variables should have one clear purpose, it shouldn't change purpose (what is being stored) part way through the program.  This is what leads to errors...
+* P - final output has not been printed -1
+* Q - scanf() must be passed the location of a variable, not the variable itself -1
+* R - this variable is different name than others and therefore undeclared and undefined -1
+* S - Left and right matters!  where you want result to go must be on left of assignment(=) operator, expression on right ... can't flip this.
+* T - printf() with format codes in the format string must supply a variable for each format code -1
