@@ -2,6 +2,8 @@
 
 On a quiz paper, you may find a circle with a letter.  That letter is a comment code.  Look up the code below for the quiz to see detailed feedback
 
+## Quiz 1
+
 * A - type error - the type is just float /double 
 * B - Undefined value used for initialization 
 * C - %f, %lf, %d etc. are format codes and only ever go inside the format string of a `printf()` or `scanf()`
