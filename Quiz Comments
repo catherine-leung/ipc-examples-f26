@@ -24,3 +24,11 @@ On a quiz paper, you may find a circle with a letter.  That letter is a comment 
 * T - printf() with format codes in the format string must supply a variable for each format code -1
 * U - valid but it is better to declare variables at start of function (C styling thing)
 * V - scanf() reads but does not produce output.  Prompts must be written using prinf, while the reading itself is handled by scanf()
+* W - printf() with no format codes in its format string should have no other parameters
+* X - Order of statements matter.  the order here is wrong.  
+* Y - this variable name does not make sense for its usage.  Need better names than this -1
+* Z - pizza price must be calculated, not read. -2
+* AA - number of toppings isn't floating point.. you can't really get "2.3" different toppings for example.
+* BB - when you read floating point don't use the output formatting.  For example if reading a float it is always %f in a scanf.  Don't use %.2f
+* CC - to use functions you must first define them.  You can't just call functions that don't exist.  This quiz wasn't about functions and it wasn't required to write functions for it.
+* DD - %d, %f etc. are format codes, not variables.  They cannot be read from, they cannot store data -1
