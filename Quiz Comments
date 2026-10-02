@@ -22,3 +22,5 @@ On a quiz paper, you may find a circle with a letter.  That letter is a comment 
 * R - this variable is different name than others and therefore undeclared and undefined -1
 * S - Left and right matters!  where you want result to go must be on left of assignment(=) operator, expression on right ... can't flip this.
 * T - printf() with format codes in the format string must supply a variable for each format code -1
+* U - valid but it is better to declare variables at start of function (C styling thing)
+* V - scanf() reads but does not produce output.  Prompts must be written using prinf, while the reading itself is handled by scanf()
