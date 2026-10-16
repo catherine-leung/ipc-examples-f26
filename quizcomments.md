@@ -34,3 +34,47 @@ On a quiz paper, you may find a circle with a letter.  That letter is a comment 
 * BB - when you read floating point don't use the output formatting.  For example if reading a float it is always %f in a scanf.  Don't use %.2f
 * CC - to use functions you must first define them.  You can't just call functions that don't exist.  This quiz wasn't about functions and it wasn't required to write functions for it.
 * DD - %d, %f etc. are format codes, not variables.  They cannot be read from, they cannot store data -1
+
+## Quiz 2:
+
+* A - Functions do not belong in the table themselves.  For example, main() should only have result in the columns as main() only has the result variable -1
+* B - bloom()/farm() has 3 paramters and rc, there should be 4 columns in any table related bloom()/farm() one for each of these -1
+* C - sow()/spray() has one parameter and one local variable (stem seed in sow(), dew and bud in spray).  These two variables must be both present in columns for these functions -1 
+* D - columns for each argument must be initalized with values passed to function -1
+* E - results were not properly stored on return to the correct variable column -1
+* F - output missing labels -1
+* G - output values are wrong entirely -6
+* H - output from bloom()/farm() is missing -1
+* I - output from  sow()/spray() is missing  -1
+* J - output from main() is missing/wrong -1 to -3
+* K - correct output - version with bloom():
+```c
+peach: 3
+one: 2
+A: 6
+seed: 10
+stem: 9
+B: 15
+peach: 14
+three: 5
+C: 20
+seed: 3
+stem: 4
+D: 24
+```
+* L - correct output - version with farm()
+```
+dew: 7
+bud: 6
+A: 13
+mango: 10
+two: 3
+B: 16
+dew: 2
+bud: 3
+C: 19
+mango: 4
+one: 2
+D: 21
+```
+* M - Not all variables should be in the same table.  there is one in main, then one per call of function.  tracking it all in one big table misses function calls entirely -1
