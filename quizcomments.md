@@ -77,4 +77,6 @@ mango: 4
 one: 2
 D: 21
 ```
-* M - Not all variables should be in the same table.  there is one in main, then one per call of function.  tracking it all in one big table misses function calls entirely -1
+* M - Not all variables should be in the same table.  there is one table for main(), then separate table per call of function.  tracking it all in one big table misses function calls entirely -1
+* N - Output should all be in one place -1
+* O - there is no call stack tracing here -1
