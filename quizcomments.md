@@ -80,3 +80,10 @@ D: 21
 * M - Not all variables should be in the same table.  there is one table for main(), then separate table per call of function.  tracking it all in one big table misses function calls entirely -1
 * N - Output should all be in one place -1
 * O - there is no call stack tracing here -1
+* P - some output is wrong due to earlier error... wrong but NMD
+* Q - your current setup where multiple calls to same function are continued may not work well if there is a situation where A() calls B() and main() can call A() or B().  This would result in different levels of call stack.  NMD for this quiz but please note this.
+* R - separate tables needed for each function -1
+* S - Please look at how to do walkthroughs: 
+  * Intro to Walkthroughs: https://youtu.be/L-Ef-lGnjTQ?si=RazKhb6FZuuc8py0
+  * Walkthroughs with Functions: https://youtu.be/6AyqeHRNLBE?si=o0UIM_3Yo1qc8ioI
+  * Walkthroughs with arrays: https://youtu.be/i1FQGa7UtvM?si=rjHUJFqlN8KuhbaX
