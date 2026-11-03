@@ -11,20 +11,20 @@ If a note is followed by **- somenumber** that is the deduction for that particu
 
 ## Question 1: Debugging
 
-In general, 2 marks per error, 5 in total.  
+In general, 2 marks per error, 5 in total.  If you find all 5 and fix it correctly you get 10.  However, some fixes were wrong or incomplete or unnecessary and led to further errors that were not initially there.
 
-A - error occurred on multiple lines, you only identified one line.  Need to identify every line where the same error occurs and correct it -1 per error
-B - These errors are all the same error occurring on different lines, they only get one mark for all 3 nmd
-C - The correct terminology here is "variable is **uninitialized**". - nmd
-D - this is not an error - nma
-E - for any loop if you have a loop counter that starts at 0, and you want it to run n times,check i < n and iterate by adding 1.  It is not <=, not unless you also change the initialization. nma
-F - wrong fix -1
-G - fix is correct but error description is wrong. description is a prose... what is wrong.  "missing semi colon", "variable is uninitialized", "this does not update x" etc.  it isn't the fix -1
-H - your unnecessary fix introduced an error that was not previously present -2
-I - changing to for() loop is unnecessary and doing this requires extra logic in the loop or the increase happens on first iteration.
-J - printing in a function that does not say "print" in the spec is an error -1
-K - work on grammar, nmd but this is not clear.
-M - the way you made this fix requires other modifications in the loop in order for it to match properly. -1
+* A - error occurred on multiple lines, you only identified one line.  Need to identify every line where the same error occurs and correct it -1 per error
+* B - These errors are all the same error occurring on different lines, they only get one mark for all 3 nmd
+* C - The correct terminology here is "variable is **uninitialized**". - nmd
+* D - this is not an error - nma
+* E - for any loop if you have a loop counter that starts at 0, and you want it to run n times,check i < n and iterate by adding 1.  It is not <=, not unless you also change the initialization. nma
+* F - wrong fix -1
+* G - fix is correct but error description is wrong. description is a prose... what is wrong.  "missing semi colon", "variable is uninitialized", "this does not update x" etc.  it isn't the fix -1
+* H - your unnecessary fix introduced an error that was not previously present -2
+* I - changing to for() loop is unnecessary and doing this requires extra logic in the loop or the increase happens on first iteration.
+* J - printing in a function that does not say "print" in the spec is an error -1
+* K - work on grammar, nmd but this is not clear.
+* M - the way you made this fix requires other modifications in the loop in order for it to match properly. -1
 
 ## Question 2: Programming
 
