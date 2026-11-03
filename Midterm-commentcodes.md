@@ -20,7 +20,7 @@ In general, 2 marks per error, 5 in total.  If you find all 5 and fix it correct
 * E - for any loop if you have a loop counter that starts at 0, and you want it to run n times,check i < n and iterate by adding 1.  It is not <=, not unless you also change the initialization. nma
 * F - wrong fix -1
 * G - fix is correct but error description is wrong. description is a prose... what is wrong.  "missing semi colon", "variable is uninitialized", "this does not update x" etc.  it isn't the fix -1
-* H - your unnecessary fix introduced an error that was not previously present -2
+* H - your unnecessary fix introduced an error that was not previously present - 1 or -2 depending on exact bug
 * I - changing to for() loop is unnecessary and doing this requires extra logic in the loop or the increase happens on first iteration.
 * J - printing in a function that does not say "print" in the spec is an error -1
 * K - work on grammar, nmd but this is not clear.
