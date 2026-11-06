@@ -44,12 +44,18 @@ In general, 2 marks per error, 5 in total.  If you find all 5 and fix it correct
 * M - this is not how you check your input for validity
 * N - 
 * O - miscalculation of result
-
-
+* P - the word "Tags" has to be printed once before the loop or it will print multiple times 
+* Q - your format string is wrong -1
+* R - this would only work, if days < 14 -1
+* S - There is no return for this function, return type is void -1
+* T - Not how scanf() works -1
+* 
 ## Question 3 Walkthrough
 
 * A - tables organized with clear headings missing entirely for your functions -2 per function
 * B - table contains extra things that are not variables/parameters
 * C - table is missing variables/parameters
 * D - calls and returns are not properly shown with clear progression and return 
-* E 
+* E - When A() calls B() and B() calls C(), your table should keep going to right (space permitting) and go back when done, it should not refer to a previous call's table -1
+* F - tables there but much of it is empty -1 to -4 depending on how empty
+* 
