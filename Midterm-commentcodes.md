@@ -29,7 +29,27 @@ In general, 2 marks per error, 5 in total.  If you find all 5 and fix it correct
 ## Question 2: Programming
 
 
-A - Unless a function's description state that the function "reads" input, then use of scanf is a spec violation.
-B - Unless a function's descriptio states that the function "prints" something, then use of printf is a spec violation 
-C - Use of multiple returns is Single Entry, Single Exit (SESE) violation.  A function/code block has one starting point and one ending point
-D - 
+* A - Unless a function's description state that the function "reads" input, then use of scanf is a spec violation.
+* B - Unless a function's descriptio states that the function "prints" something, then use of printf is a spec violation 
+* C - Use of multiple returns is Single Entry, Single Exit (SESE) violation.  A function/code block has one starting point and one ending point
+* D - Using an uninitialized variable 
+* E - return is missing -1
+* F - use of undeclared variable
+* G - to find if x is between A and B inclusive the expression is `x >= A && x <= B`.  It cannot be written as `A >= x >= B`
+* H - Do no redeclare your parameters
+* I - the expression `x == A && x == B` means x is A AND x is B, this statement will never be true unless A and B are the same.  You want || (or) here.
+* J - declare a single variable you will return and use that name throughout.. don't change it halfway through
+* K - missing a result
+* L - you are using example data instead of parameters here... the value you need to check is not the numbers in the example..you want to make it work in general
+* M - this is not how you check your input for validity
+* N - 
+* O - miscalculation of result
+
+
+## Question 3 Walkthrough
+
+* A - tables organized with clear headings missing entirely for your functions -2 per function
+* B - table contains extra things that are not variables/parameters
+* C - table is missing variables/parameters
+* D - calls and returns are not properly shown with clear progression and return 
+* E 
