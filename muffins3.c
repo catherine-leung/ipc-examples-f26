@@ -12,6 +12,7 @@
 #define BASICPRICE 1.00
 #define PREMIUMPRICE 2.00
 
+
 void printBanner(void);
 int readBasic(void);
 int readPremium(void);
@@ -31,6 +32,8 @@ int main(void)
 	char sprinkles;
 	char icing;
 	char chocolate;
+	double extras;
+
 	//banner
 	printBanner();
 
@@ -45,9 +48,10 @@ int main(void)
 	icing = readIcing();
 	sprinkles = readSprinkles();
 	chocolate = readChocolate();
+	extras = calculateAddins(icing,sprinkles, chocolate);
 
 	//calculate total price
-	total = totalPrice(numBasic, numPremium);
+	total = totalPrice(numBasic, numPremium, extras);
 
 	//output result
 	outputResult(numBasic, numPremium, total);
@@ -76,9 +80,9 @@ int readPremium(void)
 
 }
 
-double totalPrice(int numBasic, int numPremium)
+double totalPrice(int numBasic, int numPremium, double addinExtras)
 {
-	double total = numBasic * BASICPRICE + numPremium * PREMIUMPRICE;
+	double total = numBasic * BASICPRICE + numPremium * PREMIUMPRICE + addinExtras;
 	double tax;
 	if(numBasic + numPremium < 6){
 		//fewer than 6 muffins makes them snacks so we need to charge 13% tax
@@ -118,4 +122,37 @@ char readChocolate(void)
 	scanf(" %c", &chocolate);
 	return chocolate;
 }
+
+//icing, sprinkles and chocolate will either be y or n
+//if it is y we add the addin price for that item otherwise we don't
+//we return the total addin price
+//A user can optionally add chocolate chips 5.00,sprinkles 4.00
+//icing 6.00 per muffin
+double calculateAddins(char icing, char sprinkles, char chocolate){
+	double addinPrice = 0;
+
+	if(icing == 'y'){
+		addinPrice += 6.00;
+	}
+	if(sprinkles == 'y'){
+		addinPrice += 4.00;
+	}
+	if(chocolate == 'y'){
+		addinPrice+=5.00;
+	}
+	return addinPrice;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
