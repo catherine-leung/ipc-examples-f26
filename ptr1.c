@@ -26,7 +26,7 @@ int main(void)
 void getTime(int totalSeconds, int* hptr, int* mptr, int* sptr)
 {
 	int hour = totalSeconds / 3600;
-	int min = (totalSeconds/3600) / 60;
+	int min = (totalSeconds / 3600) / 60;
 	int sec = (totalSeconds % 3600) % 60;
 
 	printf("%d seconds is : %02d:%02d:%02d\n",totalSeconds,hour,min, sec);
@@ -40,7 +40,7 @@ void getTime(int totalSeconds, int* hptr, int* mptr, int* sptr)
 void getTime2(int totalSeconds, int* hptr, int* mptr, int* sptr)
 {
 	*hptr = totalSeconds / 3600;
-	*mptr = (totalSeconds/3600) / 60;
+	*mptr = (totalSeconds / 3600) / 60;
 	*sptr = (totalSeconds % 3600) % 60;
 
 	printf("%d seconds is : %02d:%02d:%02d\n",totalSeconds,*hptr, *mptr, *sptr);
