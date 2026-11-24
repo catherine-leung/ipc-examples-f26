@@ -6,20 +6,30 @@
 */
 #define MAX 40
 #include <stdio.h>
+
+struct Student{
+	int studentNumber;
+	double midterm;
+	double final;
+};
 int linearSearch(int data[], int used, int key);
 
 int main(void){
 	int numStudent = 3;
-	//3 parallel arrays
-	int studentNumbers[MAX] = { 54321, 67891, 12345};
-	double midterms[MAX] = {36.5, 47, 26};
-	double final[MAX]= {25.5, 43, 37};
+	struct Student myclass[MAX]={
+		{54321, 36.5, 25.5},
+		{67891, 47, 43},
+		{12345, 26, 37}
+	};
+
+
+
 	int stnum;
 	int location;
 	printf("Enter a student number: ");
 	scanf("%d", &stnum);
 
-	location = linearSearch(studentNumbers, numStudent, stnum);
+	location = linearSearch(myclass, numStudent, stnum);
 	//print out that student's midterm and final marks
 
 	if(location == -1){
@@ -36,26 +46,25 @@ int main(void){
 /*this function is passed an array of integers and how many elements are used
 within the array.  It is also passed the number we are looking for in key.
 Function returns index of where key is found in data or -1 if not found*/
-int linearSearch(int data[],  int used, int key)
+int linearSearch(struct Student data[],  int used, int key)
 {
 	int rc = -1;
 	int i;
 	//this continuation condition say:
-		//if I haven't found it and I am not at the end
+	//if I haven't found it and I am not at the end
 	for(i = 0;rc == -1  && i < used; i++){
-		if(data[i] == key){
+		if(data[i].studentNumber == key){
 			rc = i;
 		}
 	}
 	return rc;
 }
 
-void bubbleSort(int data[],double midterms[], double finals[], int used){
+void bubbleSort(struct Student data[], int used){
 	//go through array, comparing adjacent pairs, 
 	//swap if not in correct order
 	int i;
-	int tmp;
-	double dtmp;
+	struct Student tmp;
 
 	for(i = 0 ;i < used - 1; i++){
 		for (j = 0;j< used - i - 1;j++){
@@ -63,15 +72,6 @@ void bubbleSort(int data[],double midterms[], double finals[], int used){
 				tmp = data[j];
 				data[j] = data[j+1];
 				data[j+1]=tmp;
-
-				dtmp = midterms[j];
-				midterms[j]=midterms[j+1]
-				midterms[j+1]=dtmp;
-
-				dtmp = finals[j];
-				finals[j]=finals[j+1]
-				finals[j+1]=dtmp;
-
 			}
 
 
